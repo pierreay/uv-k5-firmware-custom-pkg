@@ -32,20 +32,20 @@ sha256sums=("SKIP"
 validpgpkeys=()
 
 prepare() {
-	cd "${pkgname}"
-	patch -p1 -i "${srcdir}/0001-Fix-CHIRP-compatibility.patch"
-	patch -p1 -i "${srcdir}/0002-Enable-DTMF-1750Hz-TX.patch"
-	patch -p1 -i "${srcdir}/0003-Enable-BYPASS-and-RAW-demods.patch"
+    cd "${pkgname}"
+    patch -p1 -i "${srcdir}/0001-Fix-CHIRP-compatibility.patch"
+    patch -p1 -i "${srcdir}/0002-Enable-DTMF-1750Hz-TX.patch"
+    patch -p1 -i "${srcdir}/0003-Enable-BYPASS-and-RAW-demods.patch"
 }
 
 build() {
-	cd "${pkgname}"
-	make
+    cd "${pkgname}"
+    make
 }
 
 package() {
-	cd "${pkgname}"
-	cp firmware.packed.bin "${pkgdir}/"
+    cd "${pkgname}"
+    cp firmware.packed.bin "${pkgdir}/"
     echo "*** Open firmware flasher web interface at:"
     echo "*** https://kamilsss655.github.io/uvtools/"
     echo "*** And flash the 'firmware.packed.bin' file."
