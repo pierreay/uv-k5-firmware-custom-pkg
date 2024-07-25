@@ -35,7 +35,16 @@ Alternative firmware are:
 
 *Using the ArchLinux PKGBUILD helper*
 
-First, enable or disable patches directly inside the =PKGBUILD=. Then, run:
+Clone this repository and enable or disable patches directly inside the
+=PKGBUILD=:
+
+#+begin_src tmux :eval never
+git clone https://github.com/pierreay/uv-k5-firmware-custom-pkg.git
+cd uv-k5-firmware-custom-pkg
+# You may wnt to edit the PKGBUILD
+#+end_src
+
+Then, compile:
 
 #+begin_src bash :eval never
 makepkg
@@ -69,12 +78,12 @@ Then, clone the repository and parameterized the =Makefile= with desired options
 #+begin_src tmux
 git clone https://github.com/kamilsss655/uv-k5-firmware-custom
 cd uv-k5-firmware-custom
-# vi Makefile
+# You may wnt to edit the Makefile
 #+end_src
 
 Finally, compile the firmware:
 
-#+begin_src tmux
+#+begin_src bash :eval never
 make
 #+end_src
 
