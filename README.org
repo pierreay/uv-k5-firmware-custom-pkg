@@ -1,3 +1,3 @@
 * UV-K5 Firmware Custom
 
-This is an helper around my configuration of the Nunu UV-K5 firmware.
+Helper and custom configuration of the Nunu UV-K5 firmware.
