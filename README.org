@@ -1,4 +1,7 @@
 * UV-K5 Firmware Custom
+:PROPERTIES:
+:ID:       cef175b1-62f3-4e70-8fb7-a9d5d1ed8b6c
+:END:
 
 Helper and custom configuration of the Nunu UV-K5 firmware.
 
